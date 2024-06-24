@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <header>
+        <div class="header-content">
+            <img src="photo.jpg" alt="Your Photo" class="profile-photo">
+            <h1>Podili Vamsi Krishna</h1><br>
+            <h2>Software Developer</h2>
+            <p>Passionate about building scalable web applications and working with innovative technologies.</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <button id="mode-toggle">Mode</button>
+    
+    <script>
+        
+
+        // JavaScript for toggling modes
+        const modeToggle = document.getElementById('mode-toggle');
+        let currentMode = 'light';
+
+        modeToggle.addEventListener('click', () => {
+            const root = document.documentElement;
+            if (currentMode === 'light') {
+                root.setAttribute('data-theme', 'dark');
+                currentMode = 'dark';
+            } else if (currentMode === 'dark') {
+                root.setAttribute('data-theme', 'custom');
+                currentMode = 'custom';
+            } else {
+                root.setAttribute('data-theme', 'light');
+                currentMode = 'light';
+            }
+        });
+    </script>
+    <section id="about">
+        <div class="about-container">
+            <h2 id="head" class="fade-in"style="color:orange">About Me</h2>
+            <div class="bio fade-in">
+                <h3 style="color: orange;">Detailed Bio</h3>
+                <p>My name is Podili Vamsi Krishna. I am from Kattuvapalli, DoravariSatram Mandal in Andhra Pradesh. I am currently pursuing a Bachelor of Technology from Narayana Engineering College in Gudur, 3rd year, Computer Science and Engineering.</p>
+                <p>I did my schooling at Alpha EM High School, Chittamuru.</p>
+                <p>My hobbies are learning new things, watching movies, and reading books.</p>
+                <p>My strengths are good communication skills, hard work, a positive mind, and self-motivation.</p>
+                <p>My weakness is I feel uncomfortable until I finish my work.</p>
+                <p>My short-term goal is to get a job in a well-reputed company, and my long-term goal is to achieve a good position where I am working.</p>
+            </div>
+            <div class="personal-story fade-in">
+                <h3>Personal Story</h3>
+                <p>Beyond my professional pursuits, I am an avid traveler and photographer. I enjoy exploring new cultures and capturing the beauty of nature through my lens. My passion for technology and creativity drives me to constantly learn and innovate.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="projects-container">
+            <h2 id="head"style="color:orange">Projects</h2><br>
+            <div class="filter-controls">
+                <button data-filter="all">All</button>
+                <button data-filter="web">Web Development</button>
+                <button data-filter="mobile">Mobile Apps</button>
+                
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <img src="https://akm-img-a-in.tosshub.com/sites/visualstory/wp/2023/09/2150720850.jpg" alt="Project 1">
+                    <div class="project-details">
+                        <h3>Project One</h3>
+                      <p id="para">Online movies</p>
+                        <p>Technologies: HTML, CSS, JavaScript</p>
+                        <a href="https://vamsikrishna5346.github.io/online_movies/" class="project-link">View Details</a>
+                        
+                    </div>
+                </div>
+                <div class="project-card" data-category="mobile">
+                    <img src="https://img.freepik.com/premium-photo/food-delivery-with-yellow-delivery-scooter-fast-online-express-ai-generated_540381-4561.jpg" alt="Project 2">
+                    <div class="project-details">
+                        <h3>Project Two</h3>
+                        <p id="para">online food delivery</p>
+                        <p><strong>Technologies:</strong> React Native, Expo</p>
+                        <a href="https://vamsikrishna5346.github.io/online-food-delivery/" class="project-link">View Details</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="data">
+                    <img src="https://cdn.pixabay.com/photo/2023/06/29/10/12/ai-generated-8096114_1280.jpg" alt="Project 3">
+                    <div class="project-details">
+                        <h3>Project Three</h3>
+                        <p id="para">Online shopping</p>
+                        <p><strong>Technologies:</strong> Python, Pandas, Matplotlib</p>
+                        <a href="https://vamsikrishna5346.github.io/online_shopping/" class="project-link">View Details</a>
+                    </div>
+                </div>
+                    <div class="project-card" data-category="web">
+                        <img src="https://miro.medium.com/v2/resize:fit:1011/1*CiC4C7bodsoTkLq_ap2SHg.png" alt="Project 1">
+                        <div class="project-details">
+                            <h3>Project Four</h3>
+                            <p id="para">simplewebpage</p>
+                            <p>Technologies: HTML, CSS, JavaScript</p>
+                            <a href="https://vamsikrishna5346.github.io/simplewebpage/" class="project-link">View Details</a>
+                            
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="mobile">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf8LInh--EehoMumY-rEtnM5rneGiSKZQ8hN3PpsLVRAs-SSItIvUWvU2H0QaZlPrmSRY&usqp=CAU" alt="Project 2">
+                        <div class="project-details">
+                            <h3>Project Five</h3>
+                            <p id="para">Music hub</p>
+                            <p><strong>Technologies:</strong> React Native, Expo</p>
+                            <a href="https://vamsikrishna5346.github.io/musichub/" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="data">
+                        <img src="https://vinbrain.net/public/uploads/1blog/medicine-future-healthcare-technology-networking-concept-dna-digital-health-networking-hologram-futuristic-physician-engineering-medtech-generative-ai.jpg" alt="Project 3">
+                        <div class="project-details">
+                            <h3>Project Six</h3>
+                            <p id="para">Hospital webpage</p>
+                            <p><strong>Technologies:</strong> Python, Pandas, Matplotlib</p>
+                            <a href="https://vamsikrishna5346.github.io/hospital_web/" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="skills">
+        <div class="skills-container">
+            <h2 id="head"style="color:orange">Skills</h2>
+            <div class="technical-skills">
+                <h3 style="color:orange">Technical Skills</h3>
+                <div class="skill">
+                    <p>HTML</p>
+                    <div class="progress-bar">
+                        <div class="progress" data-value="90%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="progress-bar">
+                        <div class="progress" data-value="85%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>JavaScript</p>
+                    <div class="progress-bar">
+                        <div class="progress" data-value="80%"></div>
+                    </div>
+                </div>
+                <!-- Add more technical skills as needed -->
+            </div>
+            <div class="soft-skills">
+                <h3 id="head"style="color:orange">Soft Skills</h3>
+                <ul>
+                    <li><a href="#">Teamwork</a></li>
+                    <li><a href="#">Communication</a></li>
+                    <li><a href="#">Problem-solving</a></li>
+                    <!-- Add more soft skills as needed -->
+                </ul>
+            </div>
+            
+        </div>
+    
+    <section id="certifications">
+        <div class="certifications-container">
+            <h2 id="head" style="color:orange">Certifications</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <h3>Front-End Web Development</h3>
+                    <p>A comprehensive course covering HTML, CSS, and JavaScript essentials.</p>
+                    <a href="certi.pdf"class="certificate-link">View Certificate</a>
+                    <a href="web .pdf"class="certificate-link">View Certificate</a>
+                </div>
+                <div class="certificate-card">
+                    <h3>JavaScript Essentials</h3>
+                    <p>Master the fundamentals of JavaScript programming.</p>
+                    <a href="js.pdf" class="certificate-link">View Certificate</a>
+                </div>
+                <div class="certificate-card">
+                    <h3>Responsive Web Design</h3>
+                    <p>Learn to create responsive and user-friendly websites.</p>
+                    <a href="TWM.pdf" class="certificate-link">View Certificate</a>
+                </div>
+                <div class="certificate-card">
+                    <h3>Front-End Web Development</h3>
+                    <p>Learn to create responsive and user-friendly websites.</p>
+                    <a href="web .pdf" class="certificate-link">View Certificate</a>
+                </div>
+                <!-- Add more certificate cards as needed -->
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <section id="resume">
+        <div class="resume-container">
+            <h2 id="head">Resume</h2>
+            <div class="resume-content">
+                <p>Download my resume and explore my professional experience in detail.</p>
+                <a href="NAUKRI_PODILI_VAMSI_KRISHNA.pdf" class="download-btn" download>
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+                <div class="summary">
+                    <h3>Professional Summary</h3>
+                    <p>I am a web developer. I have a strong background in html,css,bootstrap,JavaScript, React, and Node.js. I am passionate about learning new technologies and continuously improving my skills. My experience includes working on both front-end and back-end projects, collaborating with teams, and delivering high-quality code.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h2 id="head">Contact</h2>
+        <p style="color:orange">Contact form and social media links.</p>
+        <div class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </div>
+        <div class="social-links">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/vamsikrishna5346" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Podili Vamsi Krishna</p>
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="scripts.js"></script>
+</body>
+</html>
